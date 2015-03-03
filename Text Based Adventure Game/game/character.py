@@ -6,7 +6,5 @@ class Character():
         self.char_class = char_class
     
 if __name__ == "__main__":
-    name = "default"
-    char_class = "default"
-    Character(name, char_class)
+    pass
     
