@@ -8,6 +8,8 @@ def run_sequence():
     
     if (char_class == "mage"):
         print("a good choice")
+    if (char_class == "hunter"):
+        print("a great choice")
         
 if __name__ == "__main__":
     run_sequence()
