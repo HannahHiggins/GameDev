@@ -3,8 +3,10 @@ import character
 import world
 import random
 import inventory
+import movement
 
-def run_sequence():
+
+def intro():
     print("Welcome to the game")
     name = raw_input("What is your name?")
     print("Hello "+ name)
@@ -19,6 +21,8 @@ def run_sequence():
         print("A good choice!")
     if (char_class == "Hunter"):
         print("A great choice!")
+    else:
+        print("Not a valid response (Mage or Hunter)")
 
     print("Let us begin...")
     
@@ -34,7 +38,18 @@ def run_sequence():
     
     print(pinventory.add_item(new_item))
     
+    #test
+    print("You discovered a new area - gained 500 exp")
+    pchar.add_exp(500)
     
+    main_run(pchar)
+    
+def main_run(pchar):
+    command = raw_input("Where do you want to go?")
+    x_change, y_change = movement.movement(command)
+    pchar.change_location(x_change, y_change)
+    #calls itself
+    main_run(pchar)
         
 if __name__ == "__main__":
-    run_sequence()
+    intro()
