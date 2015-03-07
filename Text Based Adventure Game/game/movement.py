@@ -2,21 +2,21 @@
 
 #Basic
 def movement(command):
-    if (command == "North"):
+    if (command == "N"):
         x_change = 0
         y_change = 1
         return x_change, y_change
-    if (command == "South"):
+    if (command == "S"):
         x_change = 0
         y_change = -1
         return x_change, y_change
-    if (command == "East"):
+    if (command == "E"):
         x_change = 1
         y_change = 0
         return x_change, y_change
-    if (command == "West"):
+    if (command == "W"):
         x_change = -1
         y_change = 0
         return x_change, y_change
     else:
-        print("Not a valid response (North, South, East, West")
+        print("Not a valid response (N, S, E, W")

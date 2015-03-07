@@ -15,8 +15,7 @@ Adding classes
 Creature class - enemies, traders, players?
 
 Databases - store characters, enemies, etc.
-	MySQL?
-	Game asks for user & pass, which char
+	Game asks for user & pass, which char to log in or create new char
 	store char last location, items etc.
 	
 Testing lollollol
