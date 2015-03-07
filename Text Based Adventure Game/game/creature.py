@@ -1,6 +1,6 @@
 """ Base Creature Class """
 
-class creature():
+class Creature():
     def __init__(self, name):
         self.creature_name = name
     

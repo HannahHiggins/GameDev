@@ -11,7 +11,7 @@ class run():
         name = raw_input("What is your name?")
         print("Hello "+ name)
         char_class = raw_input("Choose a class")
-    
+   
         #initialise character
         self.pchar = character.Character(name, char_class)
     
