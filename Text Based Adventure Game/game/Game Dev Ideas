@@ -12,4 +12,11 @@ Exp from discovery - currently scripted
 
 Adding classes
 
-Person class - enemies inherit, traders inherit, player inherit??
+Creature class - enemies, traders, players?
+
+Databases - store characters, enemies, etc.
+	MySQL?
+	Game asks for user & pass, which char
+	store char last location, items etc.
+	
+Testing lollollol
