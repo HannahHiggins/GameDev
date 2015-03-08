@@ -5,12 +5,16 @@ import random
 import inventory
 import movement
 import MySQLdb
+import location
+import create_enemies
 
 #not very classy class
 class run():
     def __init__(self):
         print("Welcome to the game")
         choice = raw_input("New Account or Existing Account?")
+        #testing
+        self.new_char()
         if choice == "New":
             self.new_account()
         if choice == "Existing":
@@ -71,7 +75,12 @@ class run():
         #initialise inventory
         self.pinventory = inventory.Inventory()
         
+        self.game_start()
+        
     def game_start(self):
+        #create enemies
+        create_enemies.create_enemies()
+        
         print("Welcome to "+ self.pworld.world_name + ", a " + self.pworld.world_type + " world.")
         
         #scripted - for now
@@ -89,6 +98,9 @@ class run():
         command = raw_input("Where do you want to go?")
         x_change, y_change = movement.movement(command)
         self.pchar.change_location(x_change, y_change)
+        
+        #check location for enemies
+        location.location_check(self.pchar.current_location)
         #calls itself
         self.main_run()
         

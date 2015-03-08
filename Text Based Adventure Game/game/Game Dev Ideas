@@ -1,5 +1,7 @@
 -Dump of random ideas-
 
+NEXT: Update Enemies
+
 Generate a map
 
 Generate enemies at random place on map
@@ -27,3 +29,5 @@ Regions - Region difficulty
 Multiplayer
 
 Python 3.4 upgrade
+
+Check locations for events

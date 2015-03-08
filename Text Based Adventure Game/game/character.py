@@ -1,5 +1,7 @@
 """ The Character Class """
 
+import cclass
+
 class Character():
     def __init__(self, name, char_class):
         self.name = name
@@ -7,6 +9,9 @@ class Character():
         self.char_level = 1
         self.current_exp = 0
         self.current_location = {"x-coord": 0, "y-coord":0}
+        
+        #character has a class
+        self.char_class = cclass.Cclass()
     
     def get_exp_to_level(self):
         #something basic to start with
