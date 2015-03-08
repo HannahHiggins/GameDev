@@ -19,6 +19,7 @@ class run():
             print("Not a valid response (New or Existing)")
     
     def new_account(self):
+        #allows user to create a new account
         account_username = raw_input("Enter Account Username")
         account_password = raw_input("Enter Account Password")
         account_email = raw_input("Enter Account Email")
@@ -30,9 +31,10 @@ class run():
         db.commit()
         db.close()
         
-        new_char()
+        self.new_char()
         
     def existing_account(self):
+        #check if an account exists
         account_username = raw_input("Enter Account Username")
         account_password = raw_input("Enter Account Password")
         
@@ -44,10 +46,9 @@ class run():
             print("{}, {}".format(ACCOUNT_NAME, ACCOUNT_PASS))
             
     def new_char(self):
+        #create a new character
         print('Create a new character!')
-        username = raw_input("Enter Username")
-        password = raw_input("Enter Password")
-        name = raw_input("What is your name?")
+        name = raw_input("Choose a character name")
         print("Hello "+ name)
         char_class = raw_input("Choose a class")
    

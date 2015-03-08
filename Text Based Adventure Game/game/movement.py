@@ -2,6 +2,7 @@
 
 #Basic
 def movement(command):
+    #just adds 1 unit onto the current location co-ords
     if (command == "N"):
         x_change = 0
         y_change = 1

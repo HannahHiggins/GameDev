@@ -1,4 +1,5 @@
-""" The Inventory Class """
+""" The Inventory Class 
+Basic Inventory - just a list of item names"""
 
 class Inventory():
     def __init__(self,):

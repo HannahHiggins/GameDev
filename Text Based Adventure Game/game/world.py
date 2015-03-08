@@ -2,6 +2,7 @@
 
 class World():
     def __init__(self, rand_numb):
+        #ganerates a random world type
         self.rand_numb = rand_numb
         self.world_name = "World " + str(rand_numb)
         if self.rand_numb == 1:

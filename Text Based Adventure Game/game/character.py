@@ -27,6 +27,7 @@ class Character():
             #need to be able to deal with going up multiple levels at once
     
     def change_location(self, x_change, y_change):
+        #uodates the characters location
         self.x_change = x_change
         self.y_change = y_change
         self.cur_x = self.current_location["x-coord"]
