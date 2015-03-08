@@ -14,9 +14,9 @@ class run():
         if choice == "New":
             self.new_account()
         if choice == "Existing":
-            existing_account()
-        #else:
-            #print("Not a valid response (New or Existing)")
+            self.existing_account()
+        else:
+            print("Not a valid response (New or Existing)")
     
     def new_account(self):
         account_username = raw_input("Enter Account Username")
@@ -31,6 +31,17 @@ class run():
         db.close()
         
         new_char()
+        
+    def existing_account(self):
+        account_username = raw_input("Enter Account Username")
+        account_password = raw_input("Enter Account Password")
+        
+        ##access database
+        db = MySQLdb.connect(host="127.0.0.1", port=3306, user="root", passwd="", db = "game")
+        cur = db.cursor()
+        cur.execute("SELECT * FROM game_account WHERE ACCOUNT_NAME = %s AND ACCOUNT_PASS = %s", (account_username, account_password))
+        for (ACCOUNT_NAME, ACCOUNT_PASS, ACCOUNT_EMAIL) in cur:
+            print("{}, {}".format(ACCOUNT_NAME, ACCOUNT_PASS))
             
     def new_char(self):
         print('Create a new character!')
