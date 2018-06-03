@@ -22,12 +22,10 @@ Databases - store characters, enemies, etc.
 	Game asks for user & pass, which char to log in or create new char
 	store char last location, items etc.
 	
-Testing lollollol
+Testing
 
 Regions - Region difficulty
 
 Multiplayer
-
-Python 3.4 upgrade
 
 Check locations for events
