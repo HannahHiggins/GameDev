@@ -4,7 +4,7 @@ import world
 import random
 import inventory
 import movement
-import MySQLdb
+#import MySQLdb
 import location
 import create_enemies
 
@@ -12,7 +12,7 @@ import create_enemies
 class run():
     def __init__(self):
         print("Welcome to the game")
-        choice = raw_input("New Account or Existing Account?")
+        choice = input("New Account or Existing Account?")
         #testing
         self.new_char()
         if choice == "New":
@@ -24,9 +24,9 @@ class run():
     
     def new_account(self):
         #allows user to create a new account
-        account_username = raw_input("Enter Account Username")
-        account_password = raw_input("Enter Account Password")
-        account_email = raw_input("Enter Account Email")
+        account_username = input("Enter Account Username")
+        account_password = input("Enter Account Password")
+        account_email = input("Enter Account Email")
         
         #access database
         db = MySQLdb.connect(host="127.0.0.1", port=3306, user="root", passwd="", db = "game")
@@ -39,8 +39,8 @@ class run():
         
     def existing_account(self):
         #check if an account exists
-        account_username = raw_input("Enter Account Username")
-        account_password = raw_input("Enter Account Password")
+        account_username = input("Enter Account Username")
+        account_password = input("Enter Account Password")
         
         ##access database
         db = MySQLdb.connect(host="127.0.0.1", port=3306, user="root", passwd="", db = "game")
@@ -52,9 +52,9 @@ class run():
     def new_char(self):
         #create a new character
         print('Create a new character!')
-        name = raw_input("Choose a character name")
+        name = input("Choose a character name")
         print("Hello "+ name)
-        char_class = raw_input("Choose a class")
+        char_class = input("Choose a class")
    
         #initialise character
         self.pchar = character.Character(name, char_class)
@@ -95,7 +95,7 @@ class run():
         self.main_run()
     
     def main_run(self):
-        command = raw_input("Where do you want to go?")
+        command = input("Where do you want to go?")
         x_change, y_change = movement.movement(command)
         self.pchar.change_location(x_change, y_change)
         
