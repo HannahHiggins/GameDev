@@ -11,7 +11,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="game_run.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game_run.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Text Based Adventure Game/game/game_run.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -19,6 +19,16 @@
               <folding>
                 <element signature="e#31#47#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game Dev Ideas" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Text Based Adventure Game/game/Game Dev Ideas">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,6 +63,7 @@
       <list>
         <option value="$PROJECT_DIR$/Text Based Adventure Game/game/game_run.py" />
         <option value="$PROJECT_DIR$/Text Based Adventure Game/game/enemy.py" />
+        <option value="$PROJECT_DIR$/Text Based Adventure Game/game/Game Dev Ideas" />
       </list>
     </option>
   </component>
@@ -214,6 +225,14 @@
           <folding>
             <element signature="e#31#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text Based Adventure Game/game/Game Dev Ideas">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
